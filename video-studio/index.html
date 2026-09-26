@@ -1,1 +1,114 @@
-tam
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kisato Video Studio</title>
+<meta name="description" content="Plugin Obsidian dựng video ngắn và video dài từ chủ đề tới lúc đăng lên Fanpage, YouTube và TikTok. Chạy trên máy của bạn.">
+<style>
+  :root{
+    --nen:#0e1037; --nen2:#141744; --chu:#e9ecf5; --mo:#a3a9c9;
+    --vang:#ffb52e; --vien:#2a2e63;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--nen);color:var(--chu);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .bo{max-width:760px;margin:0 auto;padding:0 20px}
+  header{padding:64px 0 40px;border-bottom:1px solid var(--vien)}
+  h1{margin:0 0 12px;font-size:34px;line-height:1.25}
+  .dat{color:var(--vang)}
+  .to{font-size:19px;color:var(--mo);margin:0 0 28px}
+  .nut{display:inline-block;background:var(--vang);color:#1a1200;text-decoration:none;
+    font-weight:700;padding:13px 26px;border-radius:9px;margin:0 10px 10px 0}
+  .nut.phu{background:transparent;color:var(--chu);border:1px solid var(--vien)}
+  h2{font-size:22px;margin:44px 0 14px;padding-top:8px}
+  h3{font-size:17px;margin:26px 0 8px;color:var(--vang)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--vien);vertical-align:top}
+  th{color:var(--mo);font-weight:600;white-space:nowrap}
+  code{background:var(--nen2);padding:2px 6px;border-radius:4px;font-size:13.5px}
+  .khung{background:var(--nen2);border:1px solid var(--vien);border-radius:10px;padding:16px 18px;margin:18px 0}
+  .khung p:first-child{margin-top:0} .khung p:last-child{margin-bottom:0}
+  ul{padding-left:22px} li{margin:6px 0}
+  footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--vien);color:var(--mo);font-size:14px}
+  a{color:var(--vang)}
+  @media (max-width:560px){h1{font-size:27px}header{padding:40px 0 30px}}
+</style>
+</head>
+<body>
+<div class="bo">
+
+<header>
+  <h1>Kisato <span class="dat">Video Studio</span></h1>
+  <p class="to">Dựng video ngắn và video dài ngay trong Obsidian — từ chủ đề tới lúc bài đã lên
+  Fanpage, YouTube và TikTok. Chạy trên máy của bạn.</p>
+  <a class="nut" href="https://github.com/luongtrainer/kisato-video-studio/releases">Tải bản mới nhất</a>
+  <a class="nut phu" href="https://github.com/luongtrainer/kisato-video-studio">Mã nguồn trên GitHub</a>
+</header>
+
+<h2>Chín bước, một dây chuyền</h2>
+<table>
+  <tr><th>01 · Chủ đề</th><td>Kho chủ đề, góc tiếp cận, trụ cột nội dung</td></tr>
+  <tr><th>02 · Lời bình</th><td>AI viết theo công thức bạn chốt, sửa lại được từng câu</td></tr>
+  <tr><th>03 · Phân cảnh</th><td>Cắt lời bình thành cảnh, sinh prompt, tạo clip</td></tr>
+  <tr><th>04 · Kiểm clip</th><td>Nghe lại lời, soi lỗi lặp, đổi clip hỏng</td></tr>
+  <tr><th>05 · Biên tập</th><td>Phụ đề, điểm nhấn, nhạc nền, cắt đoạn câm, ghép clip quay thật</td></tr>
+  <tr><th>06 · Thành phẩm</th><td>Video dọc 9:16 và ngang 16:9, kèm ảnh bìa</td></tr>
+  <tr><th>07 · Dọn dung lượng</th><td>Xoá bản nháp và tệp trung gian</td></tr>
+  <tr><th>08 · Xuất bản</th><td>Đăng hoặc đặt lịch lên Fanpage, YouTube, TikTok</td></tr>
+  <tr><th>09 · Đo lường</th><td>Lượt xem và tương tác theo từng bài</td></tr>
+</table>
+
+<h2>Cần gì trên máy</h2>
+<ul>
+  <li><strong>Obsidian 1.5.0</strong> trở lên, bản máy tính — Không chạy trên điện thoại</li>
+  <li><strong>Windows</strong> — Bản hiện tại dựng và thử trên Windows</li>
+  <li><strong>ffmpeg</strong> và <strong>ffprobe</strong> để dựng phim</li>
+  <li><strong>Python kèm Pillow</strong> để vẽ chữ và hiệu ứng lên khung hình</li>
+  <li><strong>Codex CLI</strong> đã đăng nhập, nếu dùng phần AI viết lời</li>
+</ul>
+<p>Trong Studio có nút <strong>Kiểm tra bộ dựng</strong> — Nó chỉ ra đúng thứ nào còn thiếu.</p>
+
+<h2>Cài</h2>
+<ol>
+  <li>Tải bản mới nhất ở mục Releases</li>
+  <li>Giải nén vào <code>&lt;vault&gt;/.obsidian/plugins/kisato-video-studio/</code></li>
+  <li>Obsidian → Settings → Community plugins → bật <strong>Từ Đường Kisato Video Studio</strong></li>
+</ol>
+
+<h2>Thương hiệu là của bạn</h2>
+<div class="khung">
+  <p>Mặc định Studio <strong>không in gì</strong> lên khung hình. Muốn có logo và nút kêu gọi bình
+  luận thì tự điền logo, dòng liên hệ và chữ CTA <em>của bạn</em>, rồi bật ở từng video.</p>
+  <p>Để mặc định tắt là có chủ ý: một công cụ dựng phim không được tự dán nhãn của người khác lên
+  video của bạn.</p>
+</div>
+
+<h2>Dữ liệu của bạn đi đâu</h2>
+<ul>
+  <li>Video, ảnh, bản nháp nằm trong vault và trên ổ đĩa của bạn</li>
+  <li>Khoá API lưu ở <code>~/.10x/secrets.json</code>, ngoài vault, không vào git</li>
+  <li>Khi bấm đăng, tệp đi thẳng từ máy bạn lên nền tảng đó — không qua máy chủ trung gian nào</li>
+  <li>Phần AI viết lời chạy qua Codex CLI bằng tài khoản của bạn</li>
+</ul>
+
+<h2>Nối tài khoản để đăng</h2>
+<p>Mỗi nền tảng cần ứng dụng riêng của bạn: Meta cho Fanpage, Google Cloud cho YouTube,
+TikTok for Developers cho TikTok.</p>
+
+<h3>Điều nên biết về TikTok</h3>
+<p>Ứng dụng TikTok chưa qua vòng duyệt thì chỉ đăng được vào tài khoản đã khai là người dùng thử, và
+video vào chế độ <em>Chỉ mình tôi</em>. Lúc đó Studio tự lùi sang đường nháp: tệp lên thẳng TikTok,
+bạn mở app điện thoại vào Hộp thư bấm đăng nốt.</p>
+<p>TikTok không có đặt lịch qua API. Lịch hẹn trong Studio do chính Studio giữ, nên Obsidian phải
+đang mở lúc tới giờ. Facebook và YouTube thì tự đăng ở máy chủ của họ.</p>
+
+<footer>
+  <p>Kisato Video Studio · Giấy phép MIT · Lương Trainer — Academy Group Kisato</p>
+  <p><a href="https://luongtrainer.github.io/privacy.html">Chính sách riêng tư</a> ·
+     <a href="https://luongtrainer.github.io/terms.html">Điều khoản sử dụng</a></p>
+</footer>
+
+</div>
+</body>
+</html>
