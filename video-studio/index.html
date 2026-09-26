@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kisato Video Studio</title>
-<meta name="description" content="Plugin Obsidian dựng video ngắn và video dài từ chủ đề tới lúc đăng lên Fanpage, YouTube và TikTok. Chạy trên máy của bạn.">
+<meta name="description" content="Phần mềm dựng video ngắn và video dài từ chủ đề tới lúc đăng lên Fanpage, YouTube và TikTok. Chạy trên máy của bạn.">
 <style>
   :root{
     --nen:#0e1037; --nen2:#141744; --chu:#e9ecf5; --mo:#a3a9c9;
@@ -29,6 +29,8 @@
   code{background:var(--nen2);padding:2px 6px;border-radius:4px;font-size:13.5px}
   .khung{background:var(--nen2);border:1px solid var(--vien);border-radius:10px;padding:16px 18px;margin:18px 0}
   .khung p:first-child{margin-top:0} .khung p:last-child{margin-bottom:0}
+  .lay{background:linear-gradient(135deg,#1c1f52,#141744);border:1px solid #3a3f80;
+    border-radius:12px;padding:22px 24px;margin:26px 0}
   ul{padding-left:22px} li{margin:6px 0}
   footer{margin:56px 0 40px;padding-top:22px;border-top:1px solid var(--vien);color:var(--mo);font-size:14px}
   a{color:var(--vang)}
@@ -42,8 +44,8 @@
   <h1>Kisato <span class="dat">Video Studio</span></h1>
   <p class="to">Dựng video ngắn và video dài ngay trong Obsidian — từ chủ đề tới lúc bài đã lên
   Fanpage, YouTube và TikTok. Chạy trên máy của bạn.</p>
-  <a class="nut" href="https://github.com/luongtrainer/kisato-video-studio/releases">Tải bản mới nhất</a>
-  <a class="nut phu" href="https://github.com/luongtrainer/kisato-video-studio">Mã nguồn trên GitHub</a>
+  <a class="nut" href="#nhan-ban-cai">Nhận bản cài</a>
+  <a class="nut phu" href="#can-gi">Xem yêu cầu máy</a>
 </header>
 
 <h2>Chín bước, một dây chuyền</h2>
@@ -59,7 +61,7 @@
   <tr><th>09 · Đo lường</th><td>Lượt xem và tương tác theo từng bài</td></tr>
 </table>
 
-<h2>Cần gì trên máy</h2>
+<h2 id="can-gi">Cần gì trên máy</h2>
 <ul>
   <li><strong>Obsidian 1.5.0</strong> trở lên, bản máy tính — Không chạy trên điện thoại</li>
   <li><strong>Windows</strong> — Bản hiện tại dựng và thử trên Windows</li>
@@ -68,13 +70,6 @@
   <li><strong>Codex CLI</strong> đã đăng nhập, nếu dùng phần AI viết lời</li>
 </ul>
 <p>Trong Studio có nút <strong>Kiểm tra bộ dựng</strong> — Nó chỉ ra đúng thứ nào còn thiếu.</p>
-
-<h2>Cài</h2>
-<ol>
-  <li>Tải bản mới nhất ở mục Releases</li>
-  <li>Giải nén vào <code>&lt;vault&gt;/.obsidian/plugins/kisato-video-studio/</code></li>
-  <li>Obsidian → Settings → Community plugins → bật <strong>Từ Đường Kisato Video Studio</strong></li>
-</ol>
 
 <h2>Thương hiệu là của bạn</h2>
 <div class="khung">
@@ -87,14 +82,14 @@
 <h2>Dữ liệu của bạn đi đâu</h2>
 <ul>
   <li>Video, ảnh, bản nháp nằm trong vault và trên ổ đĩa của bạn</li>
-  <li>Khoá API lưu ở <code>~/.10x/secrets.json</code>, ngoài vault, không vào git</li>
+  <li>Khoá API lưu ở <code>~/.10x/secrets.json</code>, ngoài vault</li>
   <li>Khi bấm đăng, tệp đi thẳng từ máy bạn lên nền tảng đó — không qua máy chủ trung gian nào</li>
   <li>Phần AI viết lời chạy qua Codex CLI bằng tài khoản của bạn</li>
 </ul>
 
 <h2>Nối tài khoản để đăng</h2>
 <p>Mỗi nền tảng cần ứng dụng riêng của bạn: Meta cho Fanpage, Google Cloud cho YouTube,
-TikTok for Developers cho TikTok.</p>
+TikTok for Developers cho TikTok. Studio hướng dẫn từng bước ở trang Kết nối.</p>
 
 <h3>Điều nên biết về TikTok</h3>
 <p>Ứng dụng TikTok chưa qua vòng duyệt thì chỉ đăng được vào tài khoản đã khai là người dùng thử, và
@@ -103,8 +98,16 @@ bạn mở app điện thoại vào Hộp thư bấm đăng nốt.</p>
 <p>TikTok không có đặt lịch qua API. Lịch hẹn trong Studio do chính Studio giữ, nên Obsidian phải
 đang mở lúc tới giờ. Facebook và YouTube thì tự đăng ở máy chủ của họ.</p>
 
+<div class="lay" id="nhan-ban-cai">
+  <h2 style="margin-top:0">Nhận bản cài</h2>
+  <p>Kisato Video Studio là phần mềm thương mại, cấp bản cài theo từng người dùng. Liên hệ để nhận
+  bản cài và hướng dẫn thiết lập:</p>
+  <p style="font-size:18px"><strong>TUDUONGKISATO.VN</strong> · <strong>0976.019.378</strong></p>
+  <p style="color:var(--mo);font-size:15px">Học viên 10x New Rich Academy liên hệ qua kênh của lớp.</p>
+</div>
+
 <footer>
-  <p>Kisato Video Studio · Giấy phép MIT · Lương Trainer — Academy Group Kisato</p>
+  <p>Kisato Video Studio · © 2026 Lương Trainer — Academy Group Kisato · Bảo lưu mọi quyền</p>
   <p><a href="https://luongtrainer.github.io/privacy.html">Chính sách riêng tư</a> ·
      <a href="https://luongtrainer.github.io/terms.html">Điều khoản sử dụng</a></p>
 </footer>
